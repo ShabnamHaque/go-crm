@@ -27,7 +27,6 @@ func initDatabase() {
 	fmt.Println("Database Migrated")
 }
 func main() {
-	//fmt.Println("yeahhh")
 	app := fiber.New()
 	initDatabase()
 	setupRoutes(app)

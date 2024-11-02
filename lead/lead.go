@@ -20,7 +20,6 @@ func GetLeads(c *fiber.Ctx) {
 	var leads []Lead
 	db.Find(&leads)
 	c.JSON(leads)
-
 }
 func GetLead(c *fiber.Ctx) {
 	id := c.Params("id")
@@ -28,7 +27,6 @@ func GetLead(c *fiber.Ctx) {
 	var lead Lead
 	db.Find(&lead, id)
 	c.JSON(lead)
-
 }
 func DeleteLead(c *fiber.Ctx) {
 	id := c.Params("id")
